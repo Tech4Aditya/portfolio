@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. PANDEY | CTOS_TERMINAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="matrix-bg"></div>
+    <div class="scanlines"></div>
+
+    <div id="boot-screen">
+        <div class="terminal-content">
+            <div id="boot-log"></div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="boot-status">INITIALIZING SYSTEMS...</p>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden">
+        
+        <header class="terminal-header">
+            <div class="header-left">
+                <span class="glitch-text" data-text="CTOS DATABASE: [SECURE CONNECTION]">CTOS DATABASE: [SECURE CONNECTION]</span>
+            </div>
+            <nav class="header-right">
+                <a href="#about" class="nav-link active-link">SYS://ABOUT</a>
+                <a href="#experience" class="nav-link">SYS://EXPERIENCE</a>
+                <a href="#projects" class="nav-link">SYS://PROJECTS</a>
+                <a href="#certs" class="nav-link">SYS://CERTS</a>
+                <a href="resume.pdf" class="highlight-btn" target="_blank">GET_RESUME.EXE</a>
+            </nav>
+        </header>
+
+        <section id="about" class="active-section container">
+            <div class="profile-frame">
+                <img src="profile_pic.jpg" alt="Profile of Aditya Pandey" class="profile-pic">
+                <div class="hologram-scan"></div>
+                <div class="corner-accents top-left"></div>
+                <div class="corner-accents top-right"></div>
+                <div class="corner-accents bottom-left"></div>
+                <div class="corner-accents bottom-right"></div>
+            </div>
+            <div class="bio">
+                <h1 class="glitch-text" data-text="ADITYA PANDEY">ADITYA PANDEY</h1>
+                <p class="subtitle">> B.Tech E&CE @ JIIT Noida | Developer | AI Enthusiast</p>
+                <p>Systems Operator [ID: Tech4Aditya]. Specialized in C++ (primary), Python, and JavaScript. Open-source contributor focused on AI integrations, system automation, and advanced computer vision pipelines.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tech-aditya/?skipRedirect=true" target="_blank">[LI://LINKEDIN]</a>
+                    <a href="https://github.com/Tech4Aditya" target="_blank">[GIT://HUB]</a>
+                    <a href="https://codolio.com/profile/Tech4Aditya" target="_blank">[COD://OLIO]</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container hidden-section">
+            <h2 class="section-title glow-pulse">SYSTEM LOGS: EXPERIENCE & OPEN SOURCE //</h2>
+            <div class="experience-grid">
+                
+                <div class="log-card">
+                    <h3 class="card-heading">[GSSOC'26] GirlScript Summer of Code</h3>
+                    <p class="tech-stack">Role: Contributor | May 2026 - Present</p>
+                    <p class="status-verified">[STATUS: 15+ MERGED PRs ACROSS 7 REPOS]</p>
+                    <ul class="terminal-list">
+                        <li><strong>[VERATH]:</strong> Security hardening (strict origin allowlist); fixed mobile overflow & JSX layout; resolved splash screen app hang.</li>
+                        <li><strong>[CODEVIBE]:</strong> Implemented express-rate-limit on unauthenticated endpoints, eliminating DoS vectors; fixed npm gyp build.</li>
+                        <li><strong>[LEETCODE-AI]:</strong> Patched logical AND/OR prompt injection vulnerabilities & GraphQL silent fallbacks; resolved async migrations.</li>
+                        <li><strong>[DL-SIMPLIFIED]:</strong> Debugged YOLOv8 + OpenCV road hazard detection pipeline (loop scope, misplaced returns); proposed R-CNN upgrade.</li>
+                        <li><strong>[ISSUE #1000]:</strong> Resolved NLTK lazy-loading bug causing runtime crashes on cold start.</li>
+                    </ul>
+                </div>
+
+                <div class="log-card">
+                    <h3 class="card-heading">[SYNC] CODOLIO TELEMETRY</h3>
+                    <p class="tech-stack">Real-time Competitive Programming Stats</p>
+                    <p class="stats-text">> Solved 300+ DSA problems (LeetCode, CodeChef, GFG)<br>> Top 1,500 Global Rank - Google Big Code Challenge</p>
+                    
+                    <iframe src="https://codolio.com/profile/Tech4Aditya" class="codolio-iframe" title="Codolio Stats"></iframe>
+                    
+                    <a href="https://codolio.com/profile/Tech4Aditya" target="_blank" class="cyber-link">>> EXECUTE EXTERNAL_DASHBOARD.EXE</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="container hidden-section">
+            <h2 class="section-title glow-pulse">DECRYPTED PROJECTS //</h2>
+            
+            <div style="display: flex; width: 100%;">
+                <div class="project-card widget-card" style="width: 100%;">
+                    <h3 class="card-heading">[SYNC] GITHUB API DATABANKS</h3>
+                    <p class="tech-stack">Live Source Code Extraction: Tech4Aditya</p>
+                    
+                    <div id="github-repos" class="repo-grid">
+                        <p style="color: var(--ctos-blue); font-family: var(--font-vibe); font-size: 1.2rem;">> INITIATING SECURE HANDSHAKE WITH GITHUB API...</p>
+                    </div>
+                    
+                    <a href="https://github.com/Tech4Aditya" target="_blank" class="cyber-link" style="font-size: 1rem; margin-top: 1.5rem;">>> EXECUTE MAIN_GITHUB_PROFILE.EXE</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="certs" class="container hidden-section">
+            <h2 class="section-title glow-pulse">SYSTEM CERTIFICATES //</h2>
+            <div class="cert-grid">
+                <a href="assets/1756042319954.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1756042319954.jpg" alt="GE Aerospace Certificate" class="cert-img">
+                </a>
+                <a href="assets/1759499845509.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1759499845509.jpg" alt="IEEE VLSI Certificate" class="cert-img">
+                </a>
+                <a href="assets/1771015450483.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1771015450483.jpg" alt="Deloitte Certificate" class="cert-img">
+                </a>
+                <a href="assets/1771960828517.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1771960828517.jpg" alt="CodeChef Certificate 1" class="cert-img">
+                </a>
+                <a href="assets/1778315383184.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1778315383184.jpg" alt="CodeChef Certificate 2" class="cert-img">
+                </a>
+                <a href="assets/1778315383691.jpg" target="_blank" class="cert-card">
+                    <img src="assets/1778315383691.jpg" alt="Data Structures Certificate" class="cert-img">
+                </a>
+            </div>
+        </section>
+
+        <footer class="terminal-footer">
+            <p>> CONNECTION SECURE. AWAITING INPUT... [USER_ID: Tech4Aditya]</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
